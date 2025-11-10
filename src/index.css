@@ -484,6 +484,8 @@ button:focus-visible {
         align-items: center;
         justify-content: center;
         margin-bottom:200px;
+        padding-left:50px;
+        padding-right:50px;
         /* padding-bottom:100px; */
         /* width: 100%;
         height: 40vh; */
