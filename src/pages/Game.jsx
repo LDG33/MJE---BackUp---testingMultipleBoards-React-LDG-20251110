@@ -2,11 +2,14 @@ import React from 'react'
 import { useState } from 'react'
 import Card from '../components/Card'
 import { useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Game = () => 
 {
+
+      const navigate = useNavigate();
 
       //scrolling to the bottom of the page - LDG - 20251017
       //   useEffect(() => {
@@ -118,6 +121,10 @@ const Game = () =>
             setPrev(-2),
             setPrevprev(-1)
 
+            if (items.every(item => item.stat.includes("vanish"))) {
+            //alert('success'); 
+            navigate('/next1');}
+          
             },1000)
             // setLock(false);
             lock = false;
@@ -181,7 +188,8 @@ const Game = () =>
               lock=true;
               checkThree(id);//mind uses "global" states
               console.log(lock);
-              alert(passCheck(id));
+              //commented 20251110 dont remember previous purpose
+              //alert(passCheck(id));
             }
           }
       }

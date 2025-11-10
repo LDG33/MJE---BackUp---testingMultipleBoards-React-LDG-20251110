@@ -8,7 +8,10 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Game from './pages/Game';
 import About from './pages/About';
-import PlayMoods from './pages/PlayMoods';
+import PlayMoods from './gameboards/PlayMoods';
+import PlayVegetables from './gameboards/PlayVegetables';
+import Next1 from './gameboards/Next1';
+import Next2 from './gameboards/Next2';
 
 {/* <Link to="/about">Go to About</Link> */}
 
@@ -29,6 +32,9 @@ function App() {
         <Route path="/game" element={<Game />} />
         <Route path="/about" element={<About />} />
         <Route path="/playmoods" element={<PlayMoods />} />
+        <Route path="/playvegetables" element={<PlayVegetables />} />
+        <Route path="/next1" element={<Next1 />} />
+        <Route path="/next2" element={<Next2 />} />
       </Routes>
     </div>
     <Footer />

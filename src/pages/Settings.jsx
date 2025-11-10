@@ -42,7 +42,7 @@ const Settings = () => {
 
 
 
-      <Link to="/playmoods">
+      <Link to="/game">
       <button className="startBtn">
         Play
       </button>

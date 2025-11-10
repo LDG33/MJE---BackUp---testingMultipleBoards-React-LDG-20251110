@@ -3,10 +3,13 @@ import React from 'react'
 import { useState } from 'react'
 import Card from '../components/Card'
 import { useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 
-const PlayMoods = () => {
+const PlayVegetables = () => {
+
+    const navigate = useNavigate();
 
     //scrolling to the bottom of the page - LDG - 20251017
     //   useEffect(() => {
@@ -23,35 +26,35 @@ const PlayMoods = () => {
 
 
     const [moods, setMoods] = useState([
-        {id:1, text:'smutny', icon:'😢', stat: "" },
-        {id:1, text:'sad', icon:'😢', stat: "" },
-        {id:1, text:'triste', icon:'😢', stat: "" },
-        {id:2, text:'szczęśliwy', icon:'😄', stat: "" },
+        {id:1, text:'marchewka', icon:'🥕', stat: "" },
+        {id:1, text:'carrot', icon:'🥕', stat: "" },
+        {id:1, text:'zanahoria', icon:'🥕', stat: "" },
+        {id:2, text:'ziemniak', icon:'🥔', stat: "" },
 
-        {id:2, text:'happy', icon:'😄', stat: "" },
-        {id:2, text:'feliz', icon:'😄', stat: "" },
-        {id:3, text:'znudzony', icon:'😐', stat: "" },
-        {id:3, text:'bored', icon:'😐', stat: "" },
+        {id:2, text:'potato', icon:'🥔', stat: "" },
+        {id:2, text:'papa', icon:'🥔', stat: "" },
+        {id:3, text:'cebula', icon:'🧅', stat: "" },
+        {id:3, text:'onion', icon:'🧅', stat: "" },
 
-        {id:3, text:'aburrido', icon:'😐', stat: "" },
-        {id:4, text:'zły', icon:'😠', stat: "" },
-        {id:4, text:'angry', icon:'😠', stat: "" },
-        {id:4, text:'enojado', icon:'😠', stat: "" },
+        {id:3, text:'cebolla', icon:'🧅', stat: "" },
+        {id:4, text:'ogórek', icon:'🥒', stat: "" },
+        {id:4, text:'cucumber', icon:'🥒', stat: "" },
+        {id:4, text:'pepino', icon:'🥒', stat: "" },
 
-        {id:5, text:'przestraszony', icon:'😱', stat: "" },
-        {id:5, text:'scared', icon:'😱', stat: "" },
-        {id:5, text:'asustado', icon:'😱', stat: "" },
-        {id:6, text:'senny', icon:'😴', stat: "" },
+        {id:5, text:'czosnek', icon:'🧄', stat: "" },
+        {id:5, text:'garlic', icon:'🧄', stat: "" },
+        {id:5, text:'ajo', icon:'🧄', stat: "" },
+        {id:6, text:'brokuł', icon:'🥦', stat: "" },
 
-        {id:6, text:'sleepy', icon:'😴', stat: "" },
-        {id:6, text:'somnoliento', icon:'😴', stat: "" },
-        {id:7, text:'zadowolony', icon:'😌', stat: "" },
-        {id:7, text:'satisfied', icon:'😌', stat: "" },
+        {id:6, text:'broccoli', icon:'🥦', stat: "" },
+        {id:6, text:'brócoli', icon:'🥦', stat: "" },
+        {id:7, text:'pomidor', icon:'🍅', stat: "" },
+        {id:7, text:'tomato', icon:'🍅', stat: "" },
 
-        {id:7, text:'satisfecho', icon:'😌', stat: "" },
-        {id:8, text:'szalony', icon:'🤪', stat: "" },
-        {id:8, text:'crazy', icon:'🤪', stat: "" },
-        {id:8, text:'loco', icon:'🤪', stat: "" }
+        {id:7, text:'tomate', icon:'🍅', stat: "" },
+        {id:8, text:'kukurydza', icon:'🌽', stat: "" },
+        {id:8, text:'corn', icon:'🌽', stat: "" },
+        {id:8, text:'maíz', icon:'🌽', stat: "" }
 
     ].sort(()=>Math.random()-0.5))
 
@@ -87,20 +90,38 @@ const PlayMoods = () => {
           moods[current].stat = "correct";
           moods[prevprev].stat = "correct";
           moods[prev].stat = "correct";
-          setMoods([...moods])
+          setMoods([...moods]);
           // setPrev(-2);
           // setPrevprev(-1);
           
 
           setTimeout(()=>{
+
+          // !!! MIND you are mutating the array directly !!!!!!!!!!!!!!!!!!!!! use setMoods !!!!!
+          // setMoods(prev => prev.map(mood => mood.id === 1 ? { ...mood, stat: "vanish" } : mood ));
           moods[current].stat = "vanish"
           moods[prevprev].stat = "vanish"
           moods[prev].stat = "vanish"
+          setMoods([...moods]);
           setPrev(-2),
           setPrevprev(-1)
+          //console.log('success almost');
+          // -----------> adding completion condition and redirecting to next gameboard
+          // useEffect(() => {
+          //   if (moods.every(mood => mood.stat.includes("vanish"))) {
+          //     alert('success');
+          //     navigate('/game');
+          //   }
+          // }, [moods]);
+          // -----------> it works without useEffect - happy day - it is ok like that only inside of the function
+          if (moods.every(mood => mood.stat.includes("vanish"))) {
+          //alert('success'); 
+          navigate('/');
+          }
 
           },1000)
           setLock(false);
+
 
 
         }
@@ -114,6 +135,7 @@ const PlayMoods = () => {
               moods[current].stat = ""
               moods[prevprev].stat = ""
               moods[prev].stat = ""
+              setMoods([...moods]);
               setPrev(-2),
               setPrevprev(-1)
           },1000)
@@ -162,4 +184,4 @@ const PlayMoods = () => {
 }
 
 
-export default PlayMoods
+export default PlayVegetables
