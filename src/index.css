@@ -224,30 +224,8 @@ a{
   display:block;
 } */
 
-/* here I add a responsive navbar for small screens (flex->to->block) */
-@media (max-width: 768px) {
+/*there was @media here before 20251110 - I moved it lower*/
 
-      .navbar{
-        width: 100%;
-        display: block;
-        justify-content: center;
-        text-align: center;
-        /* padding: 15px, 8%;
-        background-color: white; */
-        margin-left:-50px;
-        
-
-      }
-
-      .navbar ul{
-        margin-top:14%;
-        margin-left:30%;
-        display:block;
-        
-        
-      }
-
-  }
 
 
   .container{
@@ -453,6 +431,42 @@ button:focus-visible {
 
 
 
+/* here I add a responsive navbar for small screens (flex->to->block) */
+@media (max-width: 768px) {
 
+      .navbar{
+        width: 100%;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        /* padding: 15px, 8%;
+        background-color: white; */
+        margin-left:-50px;
+        
+
+      }
+
+      .navbar ul{
+        margin-top:14%;
+        margin-left:30%;
+        display:block;
+        
+        
+      }
+
+      .gameContainer{
+        margin-top:100px;
+        margin-bottom:100px;
+        height:400px;
+        width:700px;
+        /* background-color:red; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        gap: 1em;
+        animation: slowFocus 5s linear;
+      }
+
+  }
 
 

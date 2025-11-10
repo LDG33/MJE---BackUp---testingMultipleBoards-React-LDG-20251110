@@ -4,7 +4,7 @@ import Card from '../components/Card'
 import { useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-
+//IF YOU WILL BE HERE AFTER SUBMITION - STRIP ALL BARE - AND START AGAIN
 
 const Game = () => 
 {
