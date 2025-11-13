@@ -40,13 +40,13 @@ const Settings = () => {
 
 
 
-
+{/* 
 
       <Link to="/game">
       <button className="startBtn">
         Play
       </button>
-      </Link>
+      </Link> */}
 
     </div>
   )
