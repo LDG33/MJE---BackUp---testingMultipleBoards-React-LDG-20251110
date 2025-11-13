@@ -6,14 +6,18 @@ import Home from './pages/Home';
 import Settings from './pages/Settings';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Game from './pages/Game';
+// import Game from './gameboards/PlayFruits';
 import About from './pages/About';
+import FunFacts from './pages/FunFacts';
+
+import PlayFruits from './gameboards/PlayFruits';
 import PlayMoods from './gameboards/PlayMoods';
 import PlayVegetables from './gameboards/PlayVegetables';
 import PlayTransport from './gameboards/PlayTransport';
 import PlayNumbers from './gameboards/PlayNumbers';
 import PlayHomeware from './gameboards/PlayHomeware';
 import PlayActions from './gameboards/PlayActions';
+
 
 
 import Next1 from './gameboards/Next1';
@@ -41,9 +45,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/settings" element={<Settings />} />
-        <Route path="/game" element={<Game />} />
+        <Route path="/funfacts" element={<FunFacts />} />
+        {/* <Route path="/game" element={<Game />} /> */}
         <Route path="/about" element={<About />} />
 
+        <Route path="/playfruits" element={<PlayFruits />} />
         <Route path="/playmoods" element={<PlayMoods />} />
         <Route path="/playvegetables" element={<PlayVegetables />} />
         <Route path="/playtransport" element={<PlayTransport />} />

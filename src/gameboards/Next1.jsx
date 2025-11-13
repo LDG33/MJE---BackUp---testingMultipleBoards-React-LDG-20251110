@@ -6,7 +6,7 @@ const Next1 = () => {
   return (
     <div className="settingsContainer">
 
-      <Link to="/game">
+      <Link to="/playfruits">
       <button className="backToStartBtn">
         Repeat
       </button>

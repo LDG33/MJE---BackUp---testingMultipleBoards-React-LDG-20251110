@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-const Home = () => {
+const FunFacts = () => {
   return (
     <>
     <article className="settingsContainer" >
@@ -15,7 +15,7 @@ const Home = () => {
                 for visiting this site and have fun.
             </p>
         </div>
-        <Link to='/playfruits'>
+        <Link to='/game'>
             <button className="startBtn">
                 Start
             </button>
@@ -25,4 +25,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default FunFacts

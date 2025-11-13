@@ -27,34 +27,34 @@ const PlayVegetables = () => {
 
     const [moods, setMoods] = useState([
         {id:1, text:'marchewka', icon:'🥕', stat: "" },
-        {id:1, text:'carrot', icon:'🥕', stat: "" },
-        {id:1, text:'zanahoria', icon:'🥕', stat: "" },
+        {id:1, text:'a carrot', icon:'🥕', stat: "" },
+        {id:1, text:'una zanahoria', icon:'🥕', stat: "" },
         {id:2, text:'ziemniak', icon:'🥔', stat: "" },
 
-        {id:2, text:'potato', icon:'🥔', stat: "" },
-        {id:2, text:'papa', icon:'🥔', stat: "" },
+        {id:2, text:'a potato', icon:'🥔', stat: "" },
+        {id:2, text:'una patata', icon:'🥔', stat: "" },
         {id:3, text:'cebula', icon:'🧅', stat: "" },
-        {id:3, text:'onion', icon:'🧅', stat: "" },
+        {id:3, text:'an onion', icon:'🧅', stat: "" },
 
-        {id:3, text:'cebolla', icon:'🧅', stat: "" },
+        {id:3, text:'una cebolla', icon:'🧅', stat: "" },
         {id:4, text:'ogórek', icon:'🥒', stat: "" },
-        {id:4, text:'cucumber', icon:'🥒', stat: "" },
-        {id:4, text:'pepino', icon:'🥒', stat: "" },
+        {id:4, text:'a cucumber', icon:'🥒', stat: "" },
+        {id:4, text:'un pepino', icon:'🥒', stat: "" },
 
         {id:5, text:'czosnek', icon:'🧄', stat: "" },
-        {id:5, text:'garlic', icon:'🧄', stat: "" },
-        {id:5, text:'ajo', icon:'🧄', stat: "" },
+        {id:5, text:'a garlic', icon:'🧄', stat: "" },
+        {id:5, text:'un ajo', icon:'🧄', stat: "" },
         {id:6, text:'brokuł', icon:'🥦', stat: "" },
 
-        {id:6, text:'broccoli', icon:'🥦', stat: "" },
-        {id:6, text:'brócoli', icon:'🥦', stat: "" },
+        {id:6, text:'a broccoli', icon:'🥦', stat: "" },
+        {id:6, text:'un brócoli', icon:'🥦', stat: "" },
         {id:7, text:'pomidor', icon:'🍅', stat: "" },
-        {id:7, text:'tomato', icon:'🍅', stat: "" },
+        {id:7, text:'a tomato', icon:'🍅', stat: "" },
 
-        {id:7, text:'tomate', icon:'🍅', stat: "" },
+        {id:7, text:'un tomate', icon:'🍅', stat: "" },
         {id:8, text:'kukurydza', icon:'🌽', stat: "" },
-        {id:8, text:'corn', icon:'🌽', stat: "" },
-        {id:8, text:'maíz', icon:'🌽', stat: "" }
+        {id:8, text:'a corn', icon:'🌽', stat: "" },
+        {id:8, text:'un maíz', icon:'🌽', stat: "" }
 
     ].sort(()=>Math.random()-0.5))
 

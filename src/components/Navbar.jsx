@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="menuItems">
             <ul>
                 <Link to='/'><li className="liHome">Home</li></Link>
-                <Link to='/game'><li className="liGame">Game</li></Link>
+                <Link to='/funfacts'><li className="liGame">Fun Facts</li></Link>
                 <Link to='/settings'><li className="liSettings">Settings</li></Link>
                 <Link to='/about'><li className="liAbout">About</li></Link>
             </ul>
