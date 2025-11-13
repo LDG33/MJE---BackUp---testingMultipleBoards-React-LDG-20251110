@@ -26,35 +26,35 @@ const Game = () =>
 
 
       const [items, setItems] = useState([
-          {id:1, text:'jabłko', icon:'🍎', stat: "", sound:'jablko.mp3' },
-          {id:1, text:'an apple', icon:'🍎', stat: "", sound:'apple.mp3' },
-          {id:1, text:'manzana', icon:'🍎', stat: "", sound:'manzana.mp3'  },
-          {id:2, text:'pomarańcze', icon:'🍊', stat: "", sound:'pomarancze.mp3'  },
+          {id:1, text:'samochód', icon:'🚗', stat: "", sound:'.mp3' },
+          {id:1, text:'a car', icon:'🚗', stat: "", sound:'.mp3' },
+          {id:1, text:'un coche', icon:'🚗', stat: "", sound:'.mp3'  },
+          {id:2, text:'samolot', icon:'✈️', stat: "", sound:'.mp3'  },
 
-          {id:2, text:'orange', icon:'🍊', stat: "", sound:'orange.mp3'  },
-          {id:2, text:'naranjas', icon:'🍊', stat: "", sound:'naranjas.mp3'  },
-          {id:3, text:'cytryna', icon:'🍋', stat: "", sound:'cytryna.mp3'  },
-          {id:3, text:'lemon', icon:'🍋', stat: "", sound:'lemon.mp3'  },
+          {id:2, text:'a plane', icon:'✈️', stat: "", sound:'.mp3'  },
+          {id:2, text:'un avión', icon:'✈️', stat: "", sound:'.mp3'  },
+          {id:3, text:'statek', icon:'🚢', stat: "", sound:'.mp3'  },
+          {id:3, text:'a ship', icon:'🚢', stat: "", sound:'.mp3'  },
 
-          {id:3, text:'limón', icon:'🍋', stat: "", sound:'limon.mp3'  },
-          {id:4, text:'truskawka', icon:'🍓', stat: "", sound:'truskawka.mp3'  },
-          {id:4, text:'strawberry', icon:'🍓', stat: "", sound:'strawberry.mp3'  },
-          {id:4, text:'fresa', icon:'🍓', stat: "", sound:'fresa.mp3'  },
+          {id:3, text:'un barco', icon:'🚢', stat: "", sound:'.mp3'  },
+          {id:4, text:'pociąg', icon:'🚆', stat: "", sound:'.mp3'  },
+          {id:4, text:'a train', icon:'🚆', stat: "", sound:'.mp3'  },
+          {id:4, text:'un tren', icon:'🚆', stat: "", sound:'.mp3'  },
 
-          {id:5, text:'winogrona', icon:'🍇', stat: "", sound:'winogrona.mp3'  },
-          {id:5, text:'grapes', icon:'🍇', stat: "", sound:'grapes.mp3'  },
-          {id:5, text:'uvas', icon:'🍇', stat: "", sound:'uvas.mp3'  },
-          {id:6, text:'arbuz', icon:'🍉', stat: "", sound:'arbuz.mp3'  },
+          {id:5, text:'rower', icon:'🚲', stat: "", sound:'.mp3'  },
+          {id:5, text:'a bicycle', icon:'🚲', stat: "", sound:'.mp3'  },
+          {id:5, text:'una bicicleta', icon:'🚲', stat: "", sound:'.mp3'  },
+          {id:6, text:'śmigłowiec', icon:'🚁', stat: "", sound:'.mp3'  },
 
-          {id:6, text:'watermelon', icon:'🍉', stat: "", sound:'watermelon.mp3'  },
-          {id:6, text:'sandía', icon:'🍉', stat: "", sound:'sandia.mp3'  },
-          {id:7, text:'gruszka', icon:'🍐', stat: "", sound:'gruszka.mp3'  },
-          {id:7, text:'pear', icon:'🍐', stat: "", sound:'pear.mp3'  },
+          {id:6, text:'a helicopter', icon:'🚁', stat: "", sound:'.mp3'  },
+          {id:6, text:'un helicóptero', icon:'🚁', stat: "", sound:'.mp3'  },
+          {id:7, text:'autobus', icon:'🚍', stat: "", sound:'.mp3'  },
+          {id:7, text:'a bus', icon:'🚍', stat: "", sound:'.mp3'  },
 
-          {id:7, text:'pera', icon:'🍐', stat: "", sound:'pera.mp3'  },
-          {id:8, text:'wiśnia', icon:'🍒', stat: "", sound:'wisnia.mp3'  },
-          {id:8, text:'cherry', icon:'🍒', stat: "", sound:'cherry.mp3'  },
-          {id:8, text:'cereza', icon:'🍒', stat: "", sound:'cereza.mp3'  }
+          {id:7, text:'un autobús', icon:'🚍', stat: "", sound:'.mp3'  },
+          {id:8, text:'motor', icon:'🛵', stat: "", sound:'.mp3'  },
+          {id:8, text:'a motorbike', icon:'🛵', stat: "", sound:'.mp3'  },
+          {id:8, text:'una motocicleta', icon:'🛵', stat: "", sound:'.mp3'  }
 
       ].sort(()=>Math.random()-0.5))
 
@@ -123,7 +123,7 @@ const Game = () =>
 
             if (items.every(item => item.stat.includes("vanish"))) {
             //alert('success'); 
-            navigate('/next1');}
+            navigate('/next4');}
           
             },1000)
             // setLock(false);

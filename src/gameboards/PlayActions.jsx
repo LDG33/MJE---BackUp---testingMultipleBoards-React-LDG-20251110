@@ -26,35 +26,35 @@ const Game = () =>
 
 
       const [items, setItems] = useState([
-          {id:1, text:'jabłko', icon:'🍎', stat: "", sound:'jablko.mp3' },
-          {id:1, text:'an apple', icon:'🍎', stat: "", sound:'apple.mp3' },
-          {id:1, text:'manzana', icon:'🍎', stat: "", sound:'manzana.mp3'  },
-          {id:2, text:'pomarańcze', icon:'🍊', stat: "", sound:'pomarancze.mp3'  },
+          {id:1, text:'biec', icon:'🏃‍♂️', stat: "", sound:'.mp3' },
+          {id:1, text:'to run', icon:'🏃‍♂️', stat: "", sound:'.mp3' },
+          {id:1, text:'para correr', icon:'🏃‍♂️', stat: "", sound:'.mp3'  },
+          {id:2, text:'pływać', icon:'🏊‍♂️', stat: "", sound:'.mp3'  },
 
-          {id:2, text:'orange', icon:'🍊', stat: "", sound:'orange.mp3'  },
-          {id:2, text:'naranjas', icon:'🍊', stat: "", sound:'naranjas.mp3'  },
-          {id:3, text:'cytryna', icon:'🍋', stat: "", sound:'cytryna.mp3'  },
-          {id:3, text:'lemon', icon:'🍋', stat: "", sound:'lemon.mp3'  },
+          {id:2, text:'to swim', icon:'🏊‍♂️', stat: "", sound:'.mp3'  },
+          {id:2, text:'nadar', icon:'🏊‍♂️', stat: "", sound:'.mp3'  },
+          {id:3, text:'modlić się', icon:'🙏', stat: "", sound:'.mp3'  },
+          {id:3, text:'to pray', icon:'🙏', stat: "", sound:'.mp3'  },
 
-          {id:3, text:'limón', icon:'🍋', stat: "", sound:'limon.mp3'  },
-          {id:4, text:'truskawka', icon:'🍓', stat: "", sound:'truskawka.mp3'  },
-          {id:4, text:'strawberry', icon:'🍓', stat: "", sound:'strawberry.mp3'  },
-          {id:4, text:'fresa', icon:'🍓', stat: "", sound:'fresa.mp3'  },
+          {id:3, text:'orar', icon:'🙏', stat: "", sound:'.mp3'  },
+          {id:4, text:'budować', icon:'🛠️', stat: "", sound:'.mp3'  },
+          {id:4, text:'to build', icon:'🛠️', stat: "", sound:'.mp3'  },
+          {id:4, text:'para construir', icon:'🛠️', stat: "", sound:'.mp3'  },
 
-          {id:5, text:'winogrona', icon:'🍇', stat: "", sound:'winogrona.mp3'  },
-          {id:5, text:'grapes', icon:'🍇', stat: "", sound:'grapes.mp3'  },
-          {id:5, text:'uvas', icon:'🍇', stat: "", sound:'uvas.mp3'  },
-          {id:6, text:'arbuz', icon:'🍉', stat: "", sound:'arbuz.mp3'  },
+          {id:5, text:'sprzątać', icon:'🧹', stat: "", sound:'.mp3'  },
+          {id:5, text:'to clean', icon:'🧹', stat: "", sound:'.mp3'  },
+          {id:5, text:'para limpiar', icon:'🧹', stat: "", sound:'.mp3'  },
+          {id:6, text:'pisać', icon:'✍️', stat: "", sound:'.mp3'  },
 
-          {id:6, text:'watermelon', icon:'🍉', stat: "", sound:'watermelon.mp3'  },
-          {id:6, text:'sandía', icon:'🍉', stat: "", sound:'sandia.mp3'  },
-          {id:7, text:'gruszka', icon:'🍐', stat: "", sound:'gruszka.mp3'  },
-          {id:7, text:'pear', icon:'🍐', stat: "", sound:'pear.mp3'  },
+          {id:6, text:'to write', icon:'✍️', stat: "", sound:'.mp3'  },
+          {id:6, text:'escribir', icon:'✍️', stat: "", sound:'.mp3'  },
+          {id:7, text:'chodzić', icon:'🚶‍♀️', stat: "", sound:'.mp3'  },
+          {id:7, text:'to walk', icon:'🚶‍♀️', stat: "", sound:'.mp3'  },
 
-          {id:7, text:'pera', icon:'🍐', stat: "", sound:'pera.mp3'  },
-          {id:8, text:'wiśnia', icon:'🍒', stat: "", sound:'wisnia.mp3'  },
-          {id:8, text:'cherry', icon:'🍒', stat: "", sound:'cherry.mp3'  },
-          {id:8, text:'cereza', icon:'🍒', stat: "", sound:'cereza.mp3'  }
+          {id:7, text:'caminar', icon:'🚶‍♀️', stat: "", sound:'.mp3'  },
+          {id:8, text:'jeździć na nartach', icon:'🎿', stat: "", sound:'.mp3'  },
+          {id:8, text:'to ski', icon:'🎿', stat: "", sound:'.mp3'  },
+          {id:8, text:'esquiar', icon:'🎿', stat: "", sound:'.mp3'  }
 
       ].sort(()=>Math.random()-0.5))
 
@@ -123,7 +123,7 @@ const Game = () =>
 
             if (items.every(item => item.stat.includes("vanish"))) {
             //alert('success'); 
-            navigate('/next1');}
+            navigate('/finish');}
           
             },1000)
             // setLock(false);

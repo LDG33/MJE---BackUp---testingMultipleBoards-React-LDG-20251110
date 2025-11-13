@@ -2,17 +2,17 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 
-const Next1 = () => {
+const Next6 = () => {
   return (
     <div className="settingsContainer">
 
-      <Link to="/game">
+      <Link to="/playhomeware">
       <button className="backToStartBtn">
         Repeat
       </button>
       </Link>
 
-        <Link to="/playmoods">
+        <Link to="/playactions">
       <button className="startBtn2">
         Play Next
       </button>
@@ -22,4 +22,4 @@ const Next1 = () => {
   )
 }
 
-export default Next1
+export default Next6

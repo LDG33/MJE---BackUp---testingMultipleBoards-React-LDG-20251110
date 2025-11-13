@@ -116,7 +116,7 @@ const PlayVegetables = () => {
           // -----------> it works without useEffect - happy day - it is ok like that only inside of the function
           if (moods.every(mood => mood.stat.includes("vanish"))) {
           //alert('success'); 
-          navigate('/');
+          navigate('/next3');
           }
 
           },1000)

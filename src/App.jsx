@@ -10,8 +10,20 @@ import Game from './pages/Game';
 import About from './pages/About';
 import PlayMoods from './gameboards/PlayMoods';
 import PlayVegetables from './gameboards/PlayVegetables';
+import PlayTransport from './gameboards/PlayTransport';
+import PlayNumbers from './gameboards/PlayNumbers';
+import PlayHomeware from './gameboards/PlayHomeware';
+import PlayActions from './gameboards/PlayActions';
+
+
 import Next1 from './gameboards/Next1';
 import Next2 from './gameboards/Next2';
+import Next3 from './gameboards/Next3';
+import Next4 from './gameboards/Next4';
+import Next5 from './gameboards/Next5';
+import Next6 from './gameboards/Next6';
+
+import Finish from './gameboards/Finish';
 
 {/* <Link to="/about">Go to About</Link> */}
 
@@ -31,10 +43,22 @@ function App() {
         <Route path="/settings" element={<Settings />} />
         <Route path="/game" element={<Game />} />
         <Route path="/about" element={<About />} />
+
         <Route path="/playmoods" element={<PlayMoods />} />
         <Route path="/playvegetables" element={<PlayVegetables />} />
+        <Route path="/playtransport" element={<PlayTransport />} />
+        <Route path="/playnumbers" element={<PlayNumbers />} />
+        <Route path="/playhomeware" element={<PlayHomeware />} />
+        <Route path="/playActions" element={<PlayActions />} />
+
         <Route path="/next1" element={<Next1 />} />
         <Route path="/next2" element={<Next2 />} />
+        <Route path="/next3" element={<Next3 />} />
+        <Route path="/next4" element={<Next4 />} />
+        <Route path="/next5" element={<Next5 />} />
+        <Route path="/next6" element={<Next6 />} />
+
+        <Route path="/finish" element={<Finish />} />
       </Routes>
     </div>
     <Footer />

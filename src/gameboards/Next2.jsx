@@ -6,13 +6,13 @@ const Next2 = () => {
   return (
     <div className="settingsContainer">
 
-      <Link to="/">
+      <Link to="/playmoods">
       <button className="backToStartBtn">
-        Back To Start
+        Repeat
       </button>
       </Link>
 
-        <Link to="/playVegetables">
+        <Link to="/playvegetables">
       <button className="startBtn2">
         Play Next
       </button>

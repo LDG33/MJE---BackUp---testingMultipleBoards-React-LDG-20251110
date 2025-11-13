@@ -2,19 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 
-const Next1 = () => {
+const Next2 = () => {
   return (
     <div className="settingsContainer">
 
-      <Link to="/game">
+      <Link to="/">
       <button className="backToStartBtn">
-        Repeat
-      </button>
-      </Link>
-
-        <Link to="/playmoods">
-      <button className="startBtn2">
-        Play Next
+        Completed - Back to Start
       </button>
       </Link>
 
@@ -22,4 +16,4 @@ const Next1 = () => {
   )
 }
 
-export default Next1
+export default Next2

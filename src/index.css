@@ -467,6 +467,8 @@ button:focus-visible {
         animation: slowFocus 5s linear;
       }
 
+      /* how to give a padding on left and right? */
+
       .card{
         background-color: white;
         border-radius: 5px;
