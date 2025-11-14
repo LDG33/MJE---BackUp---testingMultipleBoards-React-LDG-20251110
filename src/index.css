@@ -547,9 +547,9 @@ button:focus-visible {
         align-items: center;
         justify-content: center;
         margin-bottom:200px;
-        max-width:80%;
-        margin-left:10%;
-        margin-right:10%;
+        max-width:100%;
+        /* margin-left:10%;
+        margin-right:10%; */
         /* padding-bottom:100px; */
         /* width: 100%;
         height: 40vh; */
@@ -561,6 +561,16 @@ button:focus-visible {
       }
       .stylingQuickAccess{
         display:block;
+      }
+
+      .card{
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height:20px;
+        max-width:40px;
       }
 
   }
