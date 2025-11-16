@@ -57,15 +57,25 @@ const Game = () =>
           {id:4, text:'to build', icon:'🛠️', stat: "", sound:'.mp3'  },
           {id:4, text:'para construir', icon:'🛠️', stat: "", sound:'.mp3'  },
 
-          {id:5, text:'winogrona', icon:'🍇', stat: "", sound:'winogrona.mp3'  },
-          {id:5, text:'a grape', icon:'🍇', stat: "", sound:'grapes.mp3'  },
-          {id:5, text:'una uva', icon:'🍇', stat: "", sound:'uvas.mp3'  },
-          {id:6, text:'arbuz', icon:'🍉', stat: "", sound:'arbuz.mp3'  },
+          // {id:5, text:'winogrona', icon:'🍇', stat: "", sound:'winogrona.mp3'  },
+          // {id:5, text:'a grape', icon:'🍇', stat: "", sound:'grapes.mp3'  },
+          // {id:5, text:'una uva', icon:'🍇', stat: "", sound:'uvas.mp3'  },
+          // {id:6, text:'arbuz', icon:'🍉', stat: "", sound:'arbuz.mp3'  },
 
-          {id:6, text:'a watermelon', icon:'🍉', stat: "", sound:'watermelon.mp3'  },
-          {id:6, text:'una sandía', icon:'🍉', stat: "", sound:'sandia.mp3'  },
-          {id:7, text:'gruszka', icon:'🍐', stat: "", sound:'gruszka.mp3'  },
-          {id:7, text:'a pear', icon:'🍐', stat: "", sound:'pear.mp3'  },
+          // {id:6, text:'a watermelon', icon:'🍉', stat: "", sound:'watermelon.mp3'  },
+          // {id:6, text:'una sandía', icon:'🍉', stat: "", sound:'sandia.mp3'  },
+          // {id:7, text:'gruszka', icon:'🍐', stat: "", sound:'gruszka.mp3'  },
+          // {id:7, text:'a pear', icon:'🍐', stat: "", sound:'pear.mp3'  },
+
+          {id:5, text:'sprzątać', icon:'🧹', stat: "", sound:'.mp3'  },
+          {id:5, text:'to clean', icon:'🧹', stat: "", sound:'.mp3'  },
+          {id:5, text:'para limpiar', icon:'🧹', stat: "", sound:'.mp3'  },
+          {id:6, text:'pisać', icon:'✍️', stat: "", sound:'.mp3'  },
+
+          {id:6, text:'to write', icon:'✍️', stat: "", sound:'.mp3'  },
+          {id:6, text:'escribir', icon:'✍️', stat: "", sound:'.mp3'  },
+          {id:7, text:'chodzić', icon:'🚶‍♀️', stat: "", sound:'.mp3'  },
+          {id:7, text:'to walk', icon:'🚶‍♀️', stat: "", sound:'.mp3'  },
 
           {id:7, text:'una pera', icon:'🍐', stat: "", sound:'pera.mp3'  },
           {id:8, text:'wiśnia', icon:'🍒', stat: "", sound:'wisnia.mp3'  },
