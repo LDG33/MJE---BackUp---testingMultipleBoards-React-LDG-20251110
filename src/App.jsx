@@ -18,8 +18,6 @@ import PlayNumbers from './gameboards/PlayNumbers';
 import PlayHomeware from './gameboards/PlayHomeware';
 import PlayActions from './gameboards/PlayActions';
 
-
-
 import Next1 from './gameboards/Next1';
 import Next2 from './gameboards/Next2';
 import Next3 from './gameboards/Next3';
@@ -55,7 +53,7 @@ function App() {
         <Route path="/playtransport" element={<PlayTransport />} />
         <Route path="/playnumbers" element={<PlayNumbers />} />
         <Route path="/playhomeware" element={<PlayHomeware />} />
-        <Route path="/playActions" element={<PlayActions />} />
+        <Route path="/playactions" element={<PlayActions />} />
 
         <Route path="/next1" element={<Next1 />} />
         <Route path="/next2" element={<Next2 />} />

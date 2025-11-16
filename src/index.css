@@ -433,7 +433,7 @@ button:focus-visible {
 
 
 
-/* styling about section so the content would be in two columns and justified/centred  */
+/* styling ABOUT section so the content would be in two columns and justified/centred  */
 .stylingAbout{
   /* background-color: #000; */
   display:inline-block;
@@ -501,16 +501,12 @@ button:focus-visible {
         /* padding: 15px, 8%;
         background-color: white; */
         margin-left:-50px;
-        
-
       }
 
       .navbar ul{
         margin-top:14%;
         margin-left:30%;
         display:block;
-        
-        
       }
 
       .gameContainer{
