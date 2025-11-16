@@ -27,27 +27,23 @@ const Game = () =>
 
       const [items, setItems] = useState([
 
-        //  {id:1, text:'jabłko', icon:'🍎', stat: "", sound:'jablko.mp3' },
-        //   {id:1, text:'an apple', icon:'🍎', stat: "", sound:'apple.mp3' },
-        //   {id:1, text:'una manzana', icon:'🍎', stat: "", sound:'manzana.mp3'  },
-        //   {id:2, text:'pomarańcze', icon:'🍊', stat: "", sound:'pomarancze.mp3'  },
+          // {id:1, text:'jabłko', icon:'🍎', stat: "", sound:'jablko.mp3' },
+          // {id:1, text:'an apple', icon:'🍎', stat: "", sound:'apple.mp3' },
+          // {id:1, text:'una manzana', icon:'🍎', stat: "", sound:'manzana.mp3'  },
+          // {id:2, text:'pomarańcze', icon:'🍊', stat: "", sound:'pomarancze.mp3'  },
 
-        //   {id:2, text:'an orange', icon:'🍊', stat: "", sound:'orange.mp3'  },
-        //   {id:2, text:'una naranja', icon:'🍊', stat: "", sound:'naranjas.mp3'  },
-        //   {id:3, text:'cytryna', icon:'🍋', stat: "", sound:'cytryna.mp3'  },
-        //   {id:3, text:'a lemon', icon:'🍋', stat: "", sound:'lemon.mp3'  },
+          // {id:2, text:'an orange', icon:'🍊', stat: "", sound:'orange.mp3'  },
+          // {id:2, text:'una naranja', icon:'🍊', stat: "", sound:'naranjas.mp3'  },
+          // {id:3, text:'cytryna', icon:'🍋', stat: "", sound:'cytryna.mp3'  },
+          // {id:3, text:'a lemon', icon:'🍋', stat: "", sound:'lemon.mp3'  },
 
-        //   {id:3, text:'un limón', icon:'🍋', stat: "", sound:'limon.mp3'  },
-        //   {id:4, text:'truskawka', icon:'🍓', stat: "", sound:'truskawka.mp3'  },
-        //   {id:4, text:'a strawberry', icon:'🍓', stat: "", sound:'strawberry.mp3'  },
-        //   {id:4, text:'una fresa', icon:'🍓', stat: "", sound:'fresa.mp3'  },
+          // {id:3, text:'un limón', icon:'🍋', stat: "", sound:'limon.mp3'  },
+          // {id:4, text:'truskawka', icon:'🍓', stat: "", sound:'truskawka.mp3'  },
+          // {id:4, text:'a strawberry', icon:'🍓', stat: "", sound:'strawberry.mp3'  },
+          // {id:4, text:'una fresa', icon:'🍓', stat: "", sound:'fresa.mp3'  },
 
-          // {id:5, text:'winogrona', icon:'🍇', stat: "", sound:'winogrona.mp3'  },
-          // {id:5, text:'a grape', icon:'🍇', stat: "", sound:'grapes.mp3'  },
-          // {id:5, text:'una uva', icon:'🍇', stat: "", sound:'uvas.mp3'  },
-          // {id:6, text:'arbuz', icon:'🍉', stat: "", sound:'arbuz.mp3'  },
-
-                    {id:1, text:'to run', icon:'🏃‍♂️', stat: "", sound:'.mp3' },
+                    {id:1, text:'biec', icon:'🏃‍♂️', stat: "", sound:'.mp3' },
+          {id:1, text:'to run', icon:'🏃‍♂️', stat: "", sound:'.mp3' },
           {id:1, text:'para correr', icon:'🏃‍♂️', stat: "", sound:'.mp3'  },
           {id:2, text:'pływać', icon:'🏊‍♂️', stat: "", sound:'.mp3'  },
 
@@ -61,10 +57,10 @@ const Game = () =>
           {id:4, text:'to build', icon:'🛠️', stat: "", sound:'.mp3'  },
           {id:4, text:'para construir', icon:'🛠️', stat: "", sound:'.mp3'  },
 
-          {id:5, text:'sprzątać', icon:'🧹', stat: "", sound:'.mp3'  },
-          {id:5, text:'to clean', icon:'🧹', stat: "", sound:'.mp3'  },
-          {id:5, text:'para limpiar', icon:'🧹', stat: "", sound:'.mp3'  },
-          {id:6, text:'pisać', icon:'✍️', stat: "", sound:'.mp3'  },
+          {id:5, text:'winogrona', icon:'🍇', stat: "", sound:'winogrona.mp3'  },
+          {id:5, text:'a grape', icon:'🍇', stat: "", sound:'grapes.mp3'  },
+          {id:5, text:'una uva', icon:'🍇', stat: "", sound:'uvas.mp3'  },
+          {id:6, text:'arbuz', icon:'🍉', stat: "", sound:'arbuz.mp3'  },
 
           {id:6, text:'a watermelon', icon:'🍉', stat: "", sound:'watermelon.mp3'  },
           {id:6, text:'una sandía', icon:'🍉', stat: "", sound:'sandia.mp3'  },
