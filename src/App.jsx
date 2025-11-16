@@ -17,6 +17,7 @@ import PlayTransport from './gameboards/PlayTransport';
 import PlayNumbers from './gameboards/PlayNumbers';
 import PlayHomeware from './gameboards/PlayHomeware';
 import PlayActions from './gameboards/PlayActions';
+import PlayFruits2 from './gameboards/PlayFruits2';
 
 import Next1 from './gameboards/Next1';
 import Next2 from './gameboards/Next2';
@@ -48,6 +49,7 @@ function App() {
         <Route path="/about" element={<About />} />
 
         <Route path="/playfruits" element={<PlayFruits />} />
+        <Route path="/playfruits2" element={<PlayFruits2 />} />
         <Route path="/playmoods" element={<PlayMoods />} />
         <Route path="/playvegetables" element={<PlayVegetables />} />
         <Route path="/playtransport" element={<PlayTransport />} />
