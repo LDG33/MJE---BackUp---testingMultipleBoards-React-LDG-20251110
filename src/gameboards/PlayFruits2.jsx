@@ -26,9 +26,12 @@ const Game = () =>
 
 
       const [items, setItems] = useState([
-         {id:1, text:'jabłko', icon:'🍎', stat: "", sound:'jablko.mp3' },
-          {id:1, text:'an apple', icon:'🍎', stat: "", sound:'apple.mp3' },
-          {id:1, text:'una manzana', icon:'🍎', stat: "", sound:'manzana.mp3'  },
+          {id:1, text:'biec', icon:'🏃‍♂️', stat: "", sound:'.mp3' },
+          {id:1, text:'to run', icon:'🏃‍♂️', stat: "", sound:'.mp3' },
+          {id:1, text:'para correr', icon:'🏃‍♂️', stat: "", sound:'.mp3'  },
+        //  {id:1, text:'jabłko', icon:'🍎', stat: "", sound:'jablko.mp3' },
+        //   {id:1, text:'an apple', icon:'🍎', stat: "", sound:'apple.mp3' },
+        //   {id:1, text:'una manzana', icon:'🍎', stat: "", sound:'manzana.mp3'  },
           {id:2, text:'pomarańcze', icon:'🍊', stat: "", sound:'pomarancze.mp3'  },
 
           {id:2, text:'an orange', icon:'🍊', stat: "", sound:'orange.mp3'  },
